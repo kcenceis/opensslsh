@@ -1,2 +1,10 @@
 # opensslsh
-RHEL7.0/8.0 openssl sh
+
+# Supported System
+===============
+- RHEL-7.x
+- RHEL-8.x
+
+Installation
+============
+```bash
