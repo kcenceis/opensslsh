@@ -13,7 +13,10 @@ wget -P /tmp/ https://www.openssl.org/source/${OPENTAR}.tar.gz
 
 tar zxvf /tmp/${OPENTAR}.tar.gz -C /tmp/
 
-/tmp/${OPENTAR}/config --prefix=/usr/local/openssl/.openssl/ shared zlib
+
+cd /tmp/${OPENTAR}
+
+./config --prefix=/usr/local/openssl/.openssl/ shared zlib
 
 make clean
 
@@ -37,7 +40,7 @@ fi
 mv /usr/bin/openssl /usr/bin/openssl.bak
 mv /usr/include/openssl /usr/include/openssl.bak
 mv /usr/lib64/libssl.so /usr/lib64/libssl.so.bak
-ln -s /usr/local/openssl/.openssl/bin/openssl /usr/bin/openssl
+ln -s /usr/local/openssl/.openssl/bin/openssl /usr/bin/openssl  
 ln -s /usr/local/openssl/.openssl/include/openssl /usr/include/openssl
 ln -s /usr/local/openssl/.openssl/lib/libssl.so /usr/lib64/libssl.so
 ldconfig -v
