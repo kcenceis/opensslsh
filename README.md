@@ -8,4 +8,4 @@ Easily update the openssl version to 1.1.1g
 Installation
 ============
 ```bash
-sudo wget https://github.com/kcenceis/opensslsh/releases/download/1.01/openssl.sh && bash openssl.sh
+sudo wget https://raw.githubusercontent.com/kcenceis/opensslsh/master/openssl.sh && bash openssl.sh
